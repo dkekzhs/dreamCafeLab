@@ -1,1 +1,4 @@
-Today I Learned
+
+ - JIRA 작성
+ - 요구사항 명세서 작성
+ - 화면 설계
