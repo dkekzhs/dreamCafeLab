@@ -1,15 +1,13 @@
 <script setup>
 import Avatar from '@/components/Avatar.vue'
 import AjaxBar from '@/components/AjaxBar.vue'
+import Tab from '@/components/Tab.vue'
 </script>
 
 <template>
   <Avatar/>
   <Avatar/>
-  <Avatar/>
-  <Avatar/>
-  <Avatar/>
-  <Avatar/>
+  <Tab/>
   <AjaxBar/>
 </template>
 
