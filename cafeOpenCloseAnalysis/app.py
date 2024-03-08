@@ -1,22 +1,3 @@
-from flask import Flask, render_template
-
-from csvAnalysis.filterCSV import filter_cafe_by_year_and_area
-
-app = Flask(__name__)
-
-
-@app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World!'
-
-@app.route("/analysis/<year>/<area>")
-def analysis(year, area):
-    try:
-        filter_cafe_by_year_and_area("./dat", year, area)
-        return "Finished"
-    except Exception as e:
-        return render_template('error.html', error=str(e))
-
-
-if __name__ == '__main__':
-    app.run()
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2c58874ca999082c2950d80078ab43c17390120b3add6b3b9e4bcd19cc327ca
+size 545
