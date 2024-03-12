@@ -1,14 +1,3 @@
-package com.ssafy.backend.member.model.repository;
-
-import com.ssafy.backend.member.model.domain.Member;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.Optional;
-
-@Repository
-public interface MemberRepository extends JpaRepository<Member,Integer> {
-    Optional<Member> findByNameAndPassword(String name, String password);
-
-    Optional<Member> findByName(String name);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f4e8e4ee91c3e950bf564a3e902e7240a0566eb252c449ac9ad88e773b6d835
+size 586
