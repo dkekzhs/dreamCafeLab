@@ -1,7 +1,17 @@
-let literal = {};
+let settings = {};
 
-literal.page = {};
-literal.page.login = {};
-literal.page.login.content = "로그인하고 커피메이커 1호점의 모든 기능을 이용하세요";
+settings.renderer = {};
 
-export default literal;
+settings.renderer.background = {};
+settings.renderer.background.color = 0x00ffff;
+
+settings.renderer.ambient = {};
+settings.renderer.ambient.color = 0xffffff;
+settings.renderer.ambient.intensity = 1;
+
+settings.renderer.directional = {};
+settings.renderer.directional.color = 0xffffff;
+settings.renderer.directional.intensity = 1;
+
+
+export default settings;
