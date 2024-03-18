@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9fd1139350eb9913f77b7f1301c0d5fb9848bcf758db8d4b18a3f61b73960e9e
-size 672
+<!-- Card.vue -->
+<template>
+  <div class="text-h6">{{ title }}</div>
+  <div class="text-subtitle2">{{ author }}</div>
+</template>
+
+<script>
+export default {
+  props: {
+    title: String,
+    author: String,
+    cardColor: {
+      type: String,
+      default: '#FFFFFF'
+    },
+    textColor: {
+      type: String,
+      default: '#000000'
+    }
+  }
+}
+</script>
+
+<style scoped>
+.my-card {
+  width: 100%;
+}
+</style>
