@@ -1,6 +1,7 @@
 <!-- Card.vue -->
 <template>
   <div class="text-h6">{{ title }}</div>
+  나는야 평균
   <div class="text-subtitle2">{{ author }}</div>
 </template>
 
