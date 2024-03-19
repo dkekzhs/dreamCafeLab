@@ -1,27 +1,3 @@
-export let presetScene = {
-    normal: {
-      construction: [
-        {
-          x: 1,
-          y: 1,
-          type: "power-plant",
-        },
-      ],
-  
-      customer: [
-        {
-          id: 1,
-          model: "atm-mechine",
-          animation: {
-            translation: [
-              { time: 0, position: [0, 0, 0] },
-              { time: 1500000, position: [10, 0, 10] },
-            ],
-          },
-        },
-      ],
-    },
-    low: {},
-    high: {},
-  };
-  
+version https://git-lfs.github.com/spec/v1
+oid sha256:44e2762c30eda44e3e253a9c7f5a3deb4a12e99ee09aa52c92bc94e344b4a210
+size 1234
