@@ -14,4 +14,5 @@ settings.renderer.directional.color = 0xffffff;
 settings.renderer.directional.intensity = 1;
 
 
+
 export default settings;
