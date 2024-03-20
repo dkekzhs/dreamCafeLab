@@ -7,6 +7,7 @@ Object.freeze(CAFE_SIZE)
 
 const TILE_TYPE = {
   CAFE: 'cafe',
+  FACILITY: 'facility',
   BUILDING: 'building',
   ROAD: 'road',
   PARK: 'park',
