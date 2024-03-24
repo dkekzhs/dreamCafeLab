@@ -1,23 +1,3 @@
-<script setup>
-import { onMounted, ref, defineProps } from 'vue'
-const toPoly = function () {
-  this.$router.push({ name: 'simulation_poly_file' })
-}
-</script>
-
-<template>
-  <div class="loanContainer">
-    <a href="/simulation_poly_file" style="width: 30px">X</a>
-    <h3>Cafes</h3>
-  </div>
-</template>
-
-<style scoped>
-.loanContainer {
-  background-image: url('@/../public/apaper.jpg');
-  /* width: 100%;
-  height: 100%; */
-  width: 350px;
-  height: 500px;
-}
-</style>
+version https://git-lfs.github.com/spec/v1
+oid sha256:c0ddcd58751e29b2eabdc515d98aed234715b73b9d0976182a512efbe3386dc4
+size 730
