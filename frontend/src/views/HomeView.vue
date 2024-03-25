@@ -1,21 +1,25 @@
-<script setup>
-import Avatar from '@/components/Avatar.vue'
-import AjaxBar from '@/components/AjaxBar.vue'
-import Renderer from '@/components/Render.vue'
-import Tab from '@/components/Tab.vue'
-</script>
-
 <template>
-  <Avatar/>
-  <Avatar/>
-  <Tab/>
-  <AjaxBar/>
-  <Renderer/>
+  <div class="q-pa-md">
+    <ProfileCard />
+    <RankingCard />
+  </div>
 </template>
 
+<script>
+import ProfileCard from '@/components/home-card/ProfileCard.vue'
+import RankingCard from '@/components/home-card/RankingCard.vue'
+
+export default {
+  components: {
+    ProfileCard,
+    RankingCard
+  }
+}
+</script>
+
 <style scoped>
-* {
+.q-pa-md{
   position: relative;
-  float: left;
+  height: 500px;
 }
 </style>
