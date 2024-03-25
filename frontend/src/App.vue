@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ec450c021605897bc863eeb0ee58dcd23be2cefaae7ce1442b71c256c2f8c1ac
-size 1830
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import Footer from './views/Footer.vue'
+import Header from './views/Header.vue'
+</script>
+
+<template>
+  <q-layout view="hHh lpR fFf" style="background-color: yellow">
+    <Header></Header>
+    <q-page-container class="app-body"> <RouterView /> </q-page-container>
+
+    <Footer></Footer>
+  </q-layout>
+</template>
+
+<style scoped>
+.app-body {
+  background-color: white;
+  /* padding: 0 !important; */
+  /* margin: 0 !important; */
+}
+
+</style>

@@ -1,6 +1,9 @@
 <template>
   <div class="q-pa-md">
     <ProfileCard />
+    <br>
+    <RankingCard />
+    <RankingCard />
     <RankingCard />
   </div>
 </template>
@@ -19,7 +22,6 @@ export default {
 
 <style scoped>
 .q-pa-md{
-  position: relative;
-  height: 500px;
+  height: 85svh;
 }
 </style>
