@@ -1,19 +1,3 @@
-import './assets/main.css'
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import { Quasar } from 'quasar';
-import '@quasar/extras/material-icons/material-icons.css'
-import 'quasar/dist/quasar.css'
-
-import App from './App.vue'
-import router from './router'
-
-const app = createApp(App)
-
-app.use(createPinia());
-app.use(router);
-app.use(Quasar, {
-    plugins: {},
-});
-
-app.mount('#app')
+version https://git-lfs.github.com/spec/v1
+oid sha256:090b6731f8c85723d00c2c58fcaa16a40dd2eff490b45c9da27185e876d770f6
+size 554
