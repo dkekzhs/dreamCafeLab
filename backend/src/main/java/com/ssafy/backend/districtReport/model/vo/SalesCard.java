@@ -1,5 +1,14 @@
 package com.ssafy.backend.districtReport.model.vo;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class SalesCard {
     // 평균 임대료
     int rentFee;

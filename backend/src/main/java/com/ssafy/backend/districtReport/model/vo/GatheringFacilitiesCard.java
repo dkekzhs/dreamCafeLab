@@ -1,18 +1,3 @@
-package com.ssafy.backend.districtReport.model.vo;
-
-public class GatheringFacilitiesCard {
-    // 대표 집객시설
-    int facilityType;
-    int bank;
-    int busStop;
-    int subway;
-    int apartment;
-    int hotel;
-    int school;
-    int university;
-    int smallTheater;
-    int theater;
-    int hospital;
-    int publicOffice;
-    int pharmacy;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:50f5d1b7301476e50313322def8f045b58250181a03c02334360e851c3b8238a
+size 523
