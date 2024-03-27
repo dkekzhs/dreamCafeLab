@@ -3,7 +3,7 @@ let settings = {}
 settings.renderer = {}
 
 settings.renderer.background = {}
-settings.renderer.background.color = 0x555555
+settings.renderer.background.color = 0xffffff
 
 settings.renderer.ambient = {}
 settings.renderer.ambient.color = 0xffffff
