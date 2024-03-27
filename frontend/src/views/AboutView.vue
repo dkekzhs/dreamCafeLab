@@ -1,18 +1,3 @@
-<script setup>
-import NaverMap from "@/views/NaverMapView.vue";
-</script>
-<template>
-  <div class="about">
-    <NaverMap/>
-  </div>
-</template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+version https://git-lfs.github.com/spec/v1
+oid sha256:990a5466deae7a83ccea4c141a32cca2a5c79c5f96cc57a306801fc934e0e6ba
+size 4506
