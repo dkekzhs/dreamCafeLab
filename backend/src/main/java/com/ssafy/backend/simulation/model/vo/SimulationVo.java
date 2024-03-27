@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee44c26cc857b83219f37b87b2ce7185e08cc92516dbbf11d7bc2f35abb1fd75
-size 1287
+package com.ssafy.backend.simulation.model.vo;
+
+import com.ssafy.backend.simulation.model.dto.SimulationTotalDto;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class SimulationVo {
+    private String uuid;
+    private SimulationTotalDto simulationData;
+
+    public SimulationVo(String uuid, SimulationTotalDto simulationData) {
+        this.uuid = uuid;
+        this.simulationData = simulationData;
+    }
+}
