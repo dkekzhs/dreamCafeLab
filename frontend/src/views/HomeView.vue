@@ -2,9 +2,6 @@
   <div class="q-pa-md">
     <ProfileCard />
     <br>
-    <RankingCard />
-    <RankingCard />
-    <RankingCard />
   </div>
 </template>
 
