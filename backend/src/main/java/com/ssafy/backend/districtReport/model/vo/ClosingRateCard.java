@@ -1,4 +1,4 @@
-package com.ssafy.backend.district_report.model.vo;
+package com.ssafy.backend.districtReport.model.vo;
 
 public class ClosingRateCard {
 
