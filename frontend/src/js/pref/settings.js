@@ -5,6 +5,8 @@ settings.renderer = {}
 settings.renderer.background = {}
 settings.renderer.background.color = 0xffffff
 
+settings.renderer.secperday = 100
+
 settings.renderer.ambient = {}
 settings.renderer.ambient.color = 0xffffff
 settings.renderer.ambient.intensity = 1
