@@ -1,7 +1,9 @@
 <template>
   <div class="q-pa-md">
-    <ProfileCard />
-    <br>
+    <Transition enter-active-class="animate__animated animate__tada">
+      <ProfileCard />
+    </Transition>
+    <br />
   </div>
 </template>
 
@@ -18,7 +20,7 @@ export default {
 </script>
 
 <style scoped>
-.q-pa-md{
+.q-pa-md {
   height: 85svh;
 }
 </style>
