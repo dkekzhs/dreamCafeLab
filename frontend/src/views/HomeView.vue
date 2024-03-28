@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <ProfileCard />
-    <br>
+    <br />
   </div>
 </template>
 
@@ -16,14 +16,6 @@ export default {
   }
 }
 </script>
-
-<template>
-  <Avatar/>
-  <Avatar/>
-  <Tab/>
-  <AjaxBar/>
-  <Renderer/>
-</template>
 
 <style scoped>
 * {
