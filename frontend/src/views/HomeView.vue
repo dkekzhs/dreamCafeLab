@@ -1,8 +1,6 @@
 <template>
   <div class="q-pa-md">
-    <Transition enter-active-class="animate__animated animate__tada">
-      <ProfileCard />
-    </Transition>
+    <ProfileCard />
     <br />
   </div>
 </template>
