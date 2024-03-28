@@ -1,8 +1,7 @@
 <template>
-  <div class="q-pa-md">
+  <q-page class="q-pa-md">
     <ProfileCard />
-    <br>
-  </div>
+  </q-page>
 </template>
 
 <script>
@@ -18,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-.q-pa-md{
+.q-pa-md {
   height: 85svh;
 }
 </style>
