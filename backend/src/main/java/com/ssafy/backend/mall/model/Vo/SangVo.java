@@ -11,8 +11,10 @@ public class SangVo {
     private String trdarSe;
     private String trdarCdName;
 
-    @Builder
+    public SangVo() {
+    }
 
+    @Builder
     public SangVo(Integer district_code, String trdarSe, String trdarCdName) {
         this.district_code = district_code;
         this.trdarSe = trdarSe;
