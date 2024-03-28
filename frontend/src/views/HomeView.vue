@@ -17,8 +17,17 @@ export default {
 }
 </script>
 
+<template>
+  <Avatar/>
+  <Avatar/>
+  <Tab/>
+  <AjaxBar/>
+  <Renderer/>
+</template>
+
 <style scoped>
-.q-pa-md{
-  height: 85svh;
+* {
+  position: relative;
+  float: left;
 }
 </style>
