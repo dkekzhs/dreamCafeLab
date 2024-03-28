@@ -1,14 +1,3 @@
-package com.ssafy.backend.simulation.service;
-
-import com.ssafy.backend.simulation.model.dto.SimulationUpdateRequestDto;
-
-import java.util.HashMap;
-import java.util.Map;
-
-public interface SimulationService {
-
-    String simulationRedisCacheSave(String UUID, String data);
-    String simulationGetRedisCache(String UUID);
-
-    void updateSimulation(SimulationUpdateRequestDto dto);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:29859164e72b26ba7b71e3a6cbf144b0d66c43c254796b7f731f53a44ac03568
+size 736
