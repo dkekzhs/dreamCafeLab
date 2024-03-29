@@ -7,12 +7,12 @@
 
 <script>
 import ProfileCard from '@/components/home-card/ProfileCard.vue'
-import RankingCard from '@/components/home-card/RankingCard.vue'
+// import RankingCard from '@/components/home-card/RankingCard.vue'
 
 export default {
   components: {
-    ProfileCard,
-    RankingCard
+    ProfileCard
+    // RankingCard
   }
 }
 </script>
