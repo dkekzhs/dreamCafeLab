@@ -1,8 +1,8 @@
 <template>
-  <div class="q-pa-md">
+  <q-page class="q-pa-md">
     <ProfileCard />
-    <br />
-  </div>
+    <h1>F12로 모바일 화면 중 겔럭시s20울트라로 바꿔서 하세용</h1>
+  </q-page>
 </template>
 
 <script>
