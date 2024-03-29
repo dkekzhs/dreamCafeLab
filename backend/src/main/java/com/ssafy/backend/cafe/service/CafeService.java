@@ -13,4 +13,8 @@ public interface CafeService {
     CafeVo getCafeList();
 
     CafeVo getCafePointRadius(RequestPointRadiusDto dto);
+
+    CafeBrand getCafeBrand(int brandId);
+
+    Integer getInitPrice(CafeBrand cafeBrand, Integer cafeSize);
 }
