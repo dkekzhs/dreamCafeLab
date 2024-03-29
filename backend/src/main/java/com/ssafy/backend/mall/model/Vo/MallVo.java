@@ -10,4 +10,6 @@ import lombok.*;
 public class MallVo {
     private int price,rentPrc,spec;
 
+    public MallVo() {
+    }
 }
