@@ -1,24 +1,3 @@
-<template>
-    <div id="renderDiv"></div>
-</template>
-
-<script>
-
-import { Renderer } from "@/js/renderer.js";
-import { onMounted } from "vue";
-
-
-export default {
-  setup() {
-    onMounted(() => {    
-        console.log("hi");
-        let renderDiv = document.getElementById("renderDiv");
-        let renderer = new Renderer(renderDiv, "render");
-        
-        console.log("bye");
-    });
-  }
-}
-
-</script>
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6f3d9abd32e42730bdd2b6ec75104adf99af79bdb5b62899736a2f44c786e8a
+size 770

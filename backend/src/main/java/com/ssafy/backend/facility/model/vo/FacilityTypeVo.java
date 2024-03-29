@@ -12,6 +12,8 @@ public class FacilityTypeVo {
     private int facilityTypeId;
     private String facilityTypeName;
 
+    public FacilityTypeVo() {
+    }
 
     @Builder
     public FacilityTypeVo(int facilityTypeId, String facilityTypeName) {
