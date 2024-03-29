@@ -16,6 +16,6 @@ settings.renderer.directional.color = 0xffffff
 settings.renderer.directional.intensity = 1
 
 settings.renderer.tile = {}
-settings.renderer.tile.size = [0.9, 0.2, 0.9]
+settings.renderer.tile.size = [0.9, 0.01, 0.9]
 
 export default settings
