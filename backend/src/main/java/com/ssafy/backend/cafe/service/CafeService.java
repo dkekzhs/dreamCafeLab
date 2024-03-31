@@ -1,20 +1,3 @@
-package com.ssafy.backend.cafe.service;
-
-import com.ssafy.backend.cafe.model.domain.CafeBrand;
-import com.ssafy.backend.cafe.model.vo.CafeVo;
-import com.ssafy.backend.mall.model.dto.RequestPointRadiusDto;
-
-import java.util.List;
-
-public interface CafeService {
-
-    List<CafeBrand> getBrandList();
-
-    CafeVo getCafeList();
-
-    CafeVo getCafePointRadius(RequestPointRadiusDto dto);
-
-    CafeBrand getCafeBrand(int brandId);
-
-    Integer getInitPrice(CafeBrand cafeBrand, Integer cafeSize);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:345ab382e532b0c581f49fba0d45b5a34185ccd429c4768a10a0dd645cdfab58
+size 585
