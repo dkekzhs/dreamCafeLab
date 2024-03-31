@@ -1,13 +1,3 @@
-package com.ssafy.backend.cafe.model.repository;
-
-import com.ssafy.backend.cafe.model.domain.CafeBrand;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.Optional;
-
-@Repository
-public interface CafeBrandRepository extends JpaRepository<CafeBrand, Integer> {
-    Optional<CafeBrand> findByBrandId(int brandId);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:99541bd75ec474a812113dc4649800a75479ce0219b60e7e2d66d37773d8f9b7
+size 771
