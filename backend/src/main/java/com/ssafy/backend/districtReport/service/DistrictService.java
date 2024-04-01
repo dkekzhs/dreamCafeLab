@@ -12,4 +12,6 @@ public interface DistrictService {
     DistrictReportCardVO getDistrictReport(int id);
 
     List<DistrictReport> findBySangCode(List<SangVo> list);
+
+    DistrictReport findByDistrict(int districtId);
 }
