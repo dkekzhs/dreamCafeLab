@@ -1,19 +1,3 @@
-package com.ssafy.backend.districtReport.model.vo;
-
-import com.ssafy.backend.districtReport.model.domain.DistrictReport;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-
-@Setter
-@Getter
-@AllArgsConstructor
-@Builder
-public class DistrictReportCardVO {
-    AverageCard averageCard;
-    ClosingRateCard closingRateCard;
-    DistrictReport districtReport;
-    FloatingPopulationCard gatheringFacilitiesCard;
-    SalesCard salesCard;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8757091abbad490dea10a196f649538e48cf4700ffe2db9989a73dae6cf58054
+size 530
