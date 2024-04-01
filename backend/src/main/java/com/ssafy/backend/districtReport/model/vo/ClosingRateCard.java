@@ -11,7 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ClosingRateCard {
 
-    int closures;
+    double closures;
     int numOfCafe;
     int numOfCafe1;
     int numOfCafe2;
