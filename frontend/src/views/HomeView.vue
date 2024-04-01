@@ -1,24 +1,3 @@
-<template>
-  <q-page class="q-pa-md">
-    <ProfileCard />
-    <h1>F12로 모바일 화면 중 겔럭시s20울트라로 바꿔서 하세용</h1>
-  </q-page>
-</template>
-
-<script>
-import ProfileCard from '@/components/home-card/ProfileCard.vue'
-// import RankingCard from '@/components/home-card/RankingCard.vue'
-
-export default {
-  components: {
-    ProfileCard
-    // RankingCard
-  }
-}
-</script>
-
-<style scoped>
-.q-pa-md {
-  height: 85svh;
-}
-</style>
+version https://git-lfs.github.com/spec/v1
+oid sha256:771cb61af1242004dd4ee8dd80d20ea20c41b0c7863a0f675c705fb92af8fe67
+size 1192
