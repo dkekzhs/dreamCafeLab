@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class RevenueSaleDto {
-    private int quarter, year, revenue;
+    private int quarter,month, year, revenue;
 
     @Builder
     public RevenueSaleDto(int quarter, int year, int revenue) {
