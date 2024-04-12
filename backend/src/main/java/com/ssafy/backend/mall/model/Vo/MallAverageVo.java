@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa4b1c4867c15b428bb9aa0cf8018f45338c901c35e62d1903e223234dc5a97e
-size 539
+package com.ssafy.backend.mall.model.Vo;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@AllArgsConstructor
+@Builder
+public class MallAverageVo implements MallAverageVoInterface {
+
+    private Double rentPrc;
+    private Double prc;
+    private Double spec;
+
+    public MallAverageVo() {
+    }
+
+    public Double getRentPrc() {
+        return rentPrc;
+    }
+
+    public Double getPrc() {
+        return prc;
+    }
+
+    public Double getSpec() {
+        return spec;
+    }
+}
+

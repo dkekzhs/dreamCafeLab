@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6c35c999da74e48cdb587d9b3d9c3c82acdbbaa08583e94962d96c06fdc67e6
-size 925
+package com.ssafy.backend.cafe.model.domain;
+
+import com.ssafy.backend.cafe.model.vo.CafeVo;
+import com.ssafy.backend.cafe.model.vo.ExistCafeVo;
+import jakarta.persistence.*;
+import lombok.Getter;
+import org.locationtech.jts.geom.Point;
+
+@Entity
+@Getter
+public class ExistCafe {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int cafeId;
+
+    @ManyToOne
+    @JoinColumn(name = "brandId")
+    private CafeBrand cafeBrand;
+
+    @Column
+    private String cafeName;
+
+    @Column
+    private int districtId;
+
+    @Column
+    private Integer floor;
+
+    @Column
+    private Point cafePoint;
+
+    public ExistCafeVo toVo(){
+        return ExistCafeVo.builder()
+                .cafeName(cafeName)
+                .brand(cafeBrand)
+                .cafeId(cafeId)
+                .point(cafePoint)
+                .floor(floor)
+                .districtId(districtId)
+                .build();
+    }
+}

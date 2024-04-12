@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:826bbfda334e14a33a419c5c13c9824cd8264700e5d34220ae1801dc385fd813
-size 737
+<script setup>
+import { onMounted, ref, defineProps, defineEmits } from 'vue'
+
+const props = defineProps(['content'])
+</script>
+
+<template>
+  <div class="balloon_03">{{ props.content }}</div>
+</template>
+
+<style scoped>
+.balloon_03 {
+  position: relative;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: larger;
+  color: black;
+  width: fit-content;
+  /* height: 100px; */
+  background: #ffffff;
+  border-radius: 10px;
+}
+.balloon_03:after {
+  border-top: 10px solid #ffffff;
+  border-left: 15px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -13px;
+}
+</style>

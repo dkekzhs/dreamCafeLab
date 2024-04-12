@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c5a941a7bcd85c5b12844c48ed28963bc6f2dddff976c53273c66cac08b8295e
-size 605
+package com.ssafy.backend.common.model.domain;
+
+
+import jakarta.persistence.EntityListeners;
+import jakarta.persistence.MappedSuperclass;
+import lombok.Getter;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import java.time.LocalDateTime;
+
+@MappedSuperclass
+@Getter
+@EntityListeners(AuditingEntityListener.class)
+public class BaseTime {
+
+    @CreatedDate
+    private LocalDateTime createdDate;
+
+    @LastModifiedDate
+    private LocalDateTime updatedDate;
+}
+

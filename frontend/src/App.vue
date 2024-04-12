@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae69186398de3dd371fe3d1846dd4624433c866aab9598184e0c35ea0df8b11f
-size 576
+<template>
+  <q-layout view="hHh lpR fFf">
+    <q-page-container class="app-body">
+      <RouterView />
+    </q-page-container>
+  </q-layout>
+</template>
+
+<script setup>
+import { RouterView } from 'vue-router'
+import Header from './views/Header.vue'
+</script>
+
+<style scoped>
+/* 헤더 슬롯의 배경색 설정 */
+.q-layout-header {
+  background-color: #ffffff; /* 적절한 색상 값으로 수정 */
+}
+
+/* 페이지 컨테이너의 배경색 설정 */
+.app-body {
+  background-color: rgb(239, 233, 217);
+  background-size: cover;
+  background-position: center;
+}
+</style>

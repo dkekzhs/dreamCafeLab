@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:829dfb0fdb15a5df85c916f62adf206b93844051f24642bb85e20eba3ec8ef1d
-size 756
+package com.ssafy.jwtauth.oauth2.user;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.RestTemplate;
+
+@RequiredArgsConstructor
+@Component
+public class GoogleOAuth2UserUnlink implements OAuth2UserUnlink {
+
+    private static final String URL = "https://oauth2.googleapis.com/revoke";
+    private final RestTemplate restTemplate;
+
+    @Override
+    public void unlink(String accessToken) {
+        MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
+        params.add("token", accessToken);
+        restTemplate.postForObject(URL, params, String.class);
+    }
+}

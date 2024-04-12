@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb5cb8cbb4700a3af12b4f542325a8231068d32bc3e6bbba83892d0da45f741f
-size 593
+package com.ssafy.backend.common.config;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class JacksonConfig {
+
+    @Bean
+    public ObjectMapper objectMapper() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        // Java 8 날짜/시간 타입을 처리할 수 있는 모듈 등록
+        objectMapper.registerModule(new JavaTimeModule());
+        return objectMapper;
+    }
+}

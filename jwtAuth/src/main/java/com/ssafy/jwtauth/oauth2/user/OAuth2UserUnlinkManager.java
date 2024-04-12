@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12e5b6352e2c22d413b805f9f9a7fc0b6cea56d82801fb6784298c11365bee24
-size 1078
+package com.ssafy.jwtauth.oauth2.user;
+
+import com.ssafy.jwtauth.oauth2.exception.OAuth2AuthenticationProcessingException;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
+
+@RequiredArgsConstructor
+@Component
+public class OAuth2UserUnlinkManager {
+
+    private final GoogleOAuth2UserUnlink googleOAuth2UserUnlink;
+    private final KakaoOAuth2UserUnlink kakaoOAuth2UserUnlink;
+    private final NaverOAuth2UserUnlink naverOAuth2UserUnlink;
+
+    public void unlink(OAuth2Provider provider, String accessToken) {
+        if (OAuth2Provider.GOOGLE.equals(provider)) {
+            googleOAuth2UserUnlink.unlink(accessToken);
+        } else if (OAuth2Provider.NAVER.equals(provider)) {
+            naverOAuth2UserUnlink.unlink(accessToken);
+        } else if (OAuth2Provider.KAKAO.equals(provider)) {
+            kakaoOAuth2UserUnlink.unlink(accessToken);
+        } else {
+            throw new OAuth2AuthenticationProcessingException(
+                    "Unlink with " + provider.getRegistrationId() + " is not supported");
+        }
+    }
+}

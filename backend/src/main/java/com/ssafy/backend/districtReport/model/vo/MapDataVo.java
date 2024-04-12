@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c100d91c7e6895aecdc6db3183d9bbe1537e7607d5cf086079963a05a70fdb80
-size 637
+package com.ssafy.backend.districtReport.model.vo;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class MapDataVo {
+    private String cafeLogo;
+    private String cafeName;
+    private String cafeType;
+    private long districtId;
+    private String recommendReason;
+
+    @Builder
+    public MapDataVo(String cafeLogo, String cafeName, String cafeType, long districtId,String recommendReason) {
+        this.cafeLogo = cafeLogo;
+        this.cafeName = cafeName;
+        this.cafeType = cafeType;
+        this.districtId = districtId;
+        this.recommendReason = recommendReason;
+    }
+}

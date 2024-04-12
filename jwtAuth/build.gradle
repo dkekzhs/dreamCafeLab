@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5af504f1720773a7968db91c01834d202c9b55eaa61ee5fec1fb697807a292da
-size 1792
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.3'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.ssafy'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-config
+    implementation group: 'org.springframework.security', name: 'spring-security-config', version: '6.2.1'
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-web
+    implementation group: 'org.springframework.security', name: 'spring-security-web', version: '6.2.1'
+    // https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2
+    implementation group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version: '2.5.1.RELEASE'
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+    implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.12.5'
+    // JPA
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.33'
+
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

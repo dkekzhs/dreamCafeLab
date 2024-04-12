@@ -1,3 +1,79 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad7878fd143a4c06622cad95b71bbbb177f9327f219aec13db18d427ef8dda48
-size 1219
+<template>
+  <q-header>
+    <q-toolbar>
+      <q-toolbar-title>{{ headerTitle }}</q-toolbar-title>
+    </q-toolbar>
+  </q-header>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+
+const headerTitle = ref('Default Title')
+</script>
+
+<style scoped>
+header {
+  line-height: 1.5;
+  max-height: 5svh !important;
+  background-color: white;
+}
+p-page-container {
+  overflow: scroll;
+}
+.logo {
+  width: 50px; 
+}
+
+nav {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+nav a.router-link-exact-active {
+  color: var(--color-text);
+}
+
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+}
+
+nav a:first-of-type {
+  border: 0;
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
+  }
+
+  .logo {
+    width: 150px; /* 더 큰 화면에서 로고 크기 조정 */
+  }
+
+  header .wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    text-align: left;
+    margin-left: -1rem;
+    font-size: 1rem;
+
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+}
+</style>

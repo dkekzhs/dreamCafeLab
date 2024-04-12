@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:208f5bafef0f3b1b8b938ca1a5ac36eb9c440e89e43e5a96a75a70823e04bd19
-size 596
+package com.ssafy.backend.member.model.dto;
+
+import com.ssafy.backend.member.model.domain.Member;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class RequestMemberAddUserDto {
+    private String userName;
+    private String userPassword;
+    private int userAge;
+
+    public Member toEntity() {
+        return Member.builder()
+                .age(userAge)
+                .password(userPassword)
+                .name(userName)
+                .build();
+    }
+}

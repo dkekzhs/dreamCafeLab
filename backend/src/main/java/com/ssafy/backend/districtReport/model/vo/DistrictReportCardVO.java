@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:85cfafec1e19618b46a9c8d2f5c9d7c173507666a227c5eb13ecca2ada27f6dc
-size 563
+package com.ssafy.backend.districtReport.model.vo;
+
+import com.ssafy.backend.districtReport.model.domain.DistrictReport;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+@AllArgsConstructor
+@Builder
+public class DistrictReportCardVO {
+    private Long districtId;
+    private String districtName;
+    AverageCard averageCard;
+    ClosingRateCard closingRateCard;
+    GatheringFacilitiesCard gatheringFacilitiesCard;
+    FloatingPopulationCard floatingPopulationCard;
+    SalesCard salesCard;
+}

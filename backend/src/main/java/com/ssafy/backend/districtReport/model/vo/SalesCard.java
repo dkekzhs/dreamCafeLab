@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b444962f40e2a93f4a0d09c3fbf33b76f54f6ea588a558d4df7bed9dd21cb12
-size 529
+package com.ssafy.backend.districtReport.model.vo;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class SalesCard {
+
+    // cafes: 카페 수
+    int cafes;
+    // 카페 판매량
+    int cafeSales;
+    // 평균 임대료
+    int rentFee;
+    // 평균 보증금
+    int deposit;
+
+    // 평 수
+    int rentSpec;
+
+    // 임대료 대비 카페 당 매출 퍼센트
+    double costEffectiveness;
+}

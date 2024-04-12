@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96c73e8a2e27f25d4fc02609ca9f76256e332911cec7bedbcafe9824077d9312
-size 596
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import { Quasar } from 'quasar'
+import '@quasar/extras/material-icons/material-icons.css'
+import 'quasar/dist/quasar.css'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+import Vue3TouchEvents from 'vue3-touch-events'
+
+import App from './App.vue'
+import router from './router'
+
+const app = createApp(App)
+
+const pinia = createPinia() // Use createPinia() here
+pinia.use(piniaPluginPersistedstate)
+
+app.use(Vue3TouchEvents)
+app.use(pinia)
+app.use(router)
+app.use(Quasar, {
+  plugins: {}
+})
+
+app.mount('#app')

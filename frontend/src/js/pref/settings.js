@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a23547b1eae460b7c0531dbe73ca682245871a15acc14018d042230a20b2ed15
-size 574
+let settings = {}
+
+settings.renderer = {}
+
+settings.renderer.background = {}
+settings.renderer.background.color = 0xffffff
+
+settings.renderer.secperday = 300
+
+settings.renderer.ambient = {}
+settings.renderer.ambient.color = 0xffffff
+settings.renderer.ambient.intensity = 3
+
+settings.renderer.directional = {}
+settings.renderer.directional.color = 0xffffff
+settings.renderer.directional.intensity = 0.5
+
+settings.renderer.tile = {}
+settings.renderer.tile.size = [0.99, 0.01, 0.99]
+
+settings.renderer.divide = 1000
+
+settings.renderer.maxcustomer = 30
+
+export default settings
